@@ -1,1 +1,1 @@
-"Chicken Wings"
+"Chicken Wings Are Us"
