@@ -26,8 +26,8 @@ app.all('*', function(req, res, next) {
 
   console.log('Server started at http://localhost:8080');
 
-  app.get('/csv',function(req,res){
-        res.json({name:"Arif"}});
+  app.get('/api',function(req,res){
+        res.json({ message: 'hooray! welcome to our api!' })
   });
 
 
