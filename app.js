@@ -80,7 +80,7 @@ app.all('*', function(req, res, next) {
   // to TwiML "verbs" and "nouns". This example uses the "Say" verb.
   // Passing in a string argument sets the content of the XML tag.
   // Passing in an object literal sets attributes on the XML tag.
-  resp.say({voice:'woman'}, 'ahoy hoy! Testing Twilio and node.js');
+  resp.message('ahoy hoy!');
 
   //Render the TwiML document using "toString"
   res.writeHead(200, {
