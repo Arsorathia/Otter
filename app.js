@@ -73,7 +73,7 @@ app.all('*', function(req, res, next) {
 
   app.post('/message',function(req,res){
 
-    var textbody = req.body.body
+    var textbody = req.body
     console.log(textbody)
     var resp = new twilio.TwimlResponse();
 
