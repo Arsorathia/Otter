@@ -73,14 +73,15 @@ app.all('*', function(req, res, next) {
 
   app.post('/message',function(req,res){
 
-    console.log(req.body)
+    var textbody = req.body.body
+    console.log(textbody)
     var resp = new twilio.TwimlResponse();
 
   // The TwiML response object will have functions on it that correspond
   // to TwiML "verbs" and "nouns". This example uses the "Say" verb.
   // Passing in a string argument sets the content of the XML tag.
   // Passing in an object literal sets attributes on the XML tag.
-  resp.message('ahoy hoy!');
+  resp.message('ahoy hoy');
 
   //Render the TwiML document using "toString"
   res.writeHead(200, {
